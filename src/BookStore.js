@@ -8,10 +8,8 @@ function BookStore() {
   return (
     <DefaultLayout>
       <Routes>
-        <Route path="/" element={<Books />}>
-          <Route path="books" element={<Books />} />
+          <Route path="*" element={<Books />} />
           <Route path="categories" element={<Categories />} />
-        </Route>
       </Routes>
     </DefaultLayout>
 
