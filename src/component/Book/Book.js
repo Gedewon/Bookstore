@@ -6,7 +6,7 @@ function Book({ title, author }) {
     <section>
       <span>{title}</span>
       <span>{author}</span>
-      <button type='button'>Remove</button>
+      <button type="button">Remove</button>
     </section>
   );
 }
