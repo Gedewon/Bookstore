@@ -1,8 +1,10 @@
 import React from 'react'
-
-function Books() {
+import Book from '../Book/Book'
+function Books({BooksList}) {
   return (
-    <div>Books</div>
+    <section>
+       { BooksList.map(book=> <Book title={book.title} author={book.author}/>)}
+    </section>
   )
 }
 

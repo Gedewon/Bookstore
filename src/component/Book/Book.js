@@ -1,8 +1,11 @@
 import React from 'react'
 
-function Book() {
+function Book({title,author}) {
   return (
-    <div>Book</div>
+    <article>
+        <span role='title'>{title}</span>
+        <span role='author'>{author}</span>
+    </article>
   )
 }
 

@@ -1,8 +1,12 @@
 import React from 'react'
-
+import Books from '../Books/Books'
+import InputBook from '../InputBook/InputBook'
 function Books() {
   return (
-    <div>Books</div>
+    <section>
+        <Books BooksList={[]}/>
+        <InputBook />
+    </section>
   )
 }
 
