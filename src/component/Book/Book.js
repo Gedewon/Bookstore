@@ -1,12 +1,16 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-function Book({title,author}) {
+function Book({ title, author }) {
   return (
-    <article>
-        <span role='title'>{title}</span>
-        <span role='author'>{author}</span>
-    </article>
-  )
+    <section>
+      <span>{title}</span>
+      <span>{author}</span>
+    </section>
+  );
 }
-
-export default Book
+Book.propTypes = {
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+};
+export default Book;

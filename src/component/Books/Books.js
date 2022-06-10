@@ -1,11 +1,17 @@
-import React from 'react'
-import Book from '../Book/Book'
-function Books({BooksList}) {
+import React from 'react';
+import PropTypes from 'prop-types';
+import Book from '../Book/Book';
+
+function Books({ BooksList }) {
   return (
     <section>
-       { BooksList.map(book=> <Book title={book.title} author={book.author}/>)}
+      { BooksList.map((book) => <Book key={book.id} title={book.title} author={book.author} />)}
     </section>
-  )
+  );
 }
 
-export default Books
+Books.propTypes = {
+  BooksList: PropTypes.instanceOf(Array).isRequired,
+};
+
+export default Books;
