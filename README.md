@@ -82,7 +82,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Author
 
-👤 **Gedewon **
+👤 **Gedewon**
 
 - GitHub: [@githubhandle](https://github.com/gedewon)
 - Twitter: [@twitterhandle](https://twitter.com/gedewon)
