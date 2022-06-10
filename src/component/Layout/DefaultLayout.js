@@ -1,8 +1,21 @@
-import React from 'react'
-
-function DefaultLayout() {
+import React from 'react';
+import {  Link } from "react-router-dom";
+function DefaultLayout({children}) {
   return (
-    <div>DefaultLayout</div>
+    <section>
+
+    <header>
+        <nav>
+            <ul>
+                <li><Link to="/books">Books</Link></li>
+                <li><Link to="/categories">Categories</Link></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    {children}
+    </main>
+    </section>
   )
 }
 
