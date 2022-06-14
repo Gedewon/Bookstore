@@ -10,7 +10,7 @@ export default (state=[],action)=>{
                 action.payload
             ]
         case REMOVE:
-            return state.filter(book=>book.id !== action.payload)
+            return state.filter(book=>book.id !== action.id)
         default:
             return state;
     }
