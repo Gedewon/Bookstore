@@ -5,7 +5,7 @@ import Book from '../Book/Book';
 function Books({ BooksList }) {
   return (
     <section>
-      { BooksList.map((book) => <Book key={book.id} title={book.title} author={book.author} />)}
+      { BooksList.map((book) => <Book key={`book_${book.id}`} id={book.id} title={book.title} author={book.author} />)}
     </section>
   );
 }
