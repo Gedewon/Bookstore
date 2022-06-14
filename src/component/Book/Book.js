@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../../redux/books/books';
-function Book({ id,title, author }) {
+
+function Book({ id, title, author }) {
   const dispatch = useDispatch();
-  const handleRemove =()=>{
+  const handleRemove = () => {
     dispatch(removeBook(id));
-  }
+  };
   return (
     <section>
       <span>{title}</span>
@@ -16,6 +17,7 @@ function Book({ id,title, author }) {
   );
 }
 Book.propTypes = {
+  id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
 };

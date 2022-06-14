@@ -1,12 +1,10 @@
-import { combineReducers } from "redux";
-import books from '../redux/books/books';
-import categories from '../redux/categories/categories';
-
+import { combineReducers } from 'redux';
+import books from './books/books';
+import categories from './categories/categories';
 
 const rootReducer = combineReducers({
-books,
-categories
-})
-
+  books,
+  categories,
+});
 
 export default rootReducer;

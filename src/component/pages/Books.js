@@ -4,7 +4,7 @@ import BooksComponent from '../Books/Books';
 import InputBook from '../InputBook/InputBook';
 
 function Books() {
-  const BookList = useSelector(state=>state.books)
+  const BookList = useSelector((state) => state.books);
   return (
     <section>
       <BooksComponent BooksList={BookList} />
