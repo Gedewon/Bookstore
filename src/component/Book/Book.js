@@ -4,11 +4,14 @@ import { useDispatch } from 'react-redux';
 import { removeBook } from '../../redux/books/books';
 function Book({ id,title, author }) {
   const dispatch = useDispatch();
+  const handleRemove =()=>{
+    dispatch(removeBook(id));
+  }
   return (
     <section>
       <span>{title}</span>
       <span>{author}</span>
-      <button type="button" onClick={(id)=>dispatch(removeBook(id))}>Remove</button>
+      <button type="button" onClick={handleRemove}>Remove</button>
     </section>
   );
 }
