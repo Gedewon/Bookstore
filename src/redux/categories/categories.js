@@ -10,3 +10,4 @@ export default (state=[],action)=>{
     }
 }
 
+export const checkStatus=()=>({type:CHECK_STATUS});
