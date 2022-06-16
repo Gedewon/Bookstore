@@ -8,9 +8,10 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import logger from 'redux-logger';
 import rootReducer from './redux/configureStore';
 import BookStore from './BookStore';
+import thunk from 'redux-thunk'
 
 const store = createStore(rootReducer, composeWithDevTools(
-  applyMiddleware(logger),
+  applyMiddleware(thunk,logger),
 ));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
