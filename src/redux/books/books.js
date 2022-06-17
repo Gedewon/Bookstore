@@ -4,6 +4,7 @@ const ADD = 'BOOKSTORE/books/ADD';
 const REMOVE = 'BOOKSTORE/books/REMOVE';
 const FETCH_BOOK = 'BOOKSTORE/books/FETCH_BOOK';
 
+
 export default (state = {}, action) => {
   switch (action.type) {
     case ADD:
@@ -34,23 +35,32 @@ export default (state = {}, action) => {
   }
 };
 
-export const addBook = (payload) => {
-    console.log(payload);
-  return {type: ADD, payload}
- };
+export const addBook = (payload) =>(dispatch,_,BASE_URL)=>{
+
+  return axios({
+    method:'POST',
+    url:BASE_URL,
+    data:{
+      ...payload
+    }
+  }).then(()=>{
+    dispatch({type: ADD, payload});
+  })
+  
+} 
 
 export const removeBook = (id) => ({ type: REMOVE, id });
 
 export const fetchUser = (payload) =>({type:FETCH_BOOK , payload});
 
 
-export const fetchBooks = ()=>(dispatch,getState,BASE_URL)=>{
+export const fetchBooks = ()=>(dispatch,_,BASE_URL)=>{
     return  axios.get(`${BASE_URL}`).then(
       response => dispatch(fetchUser(response.data)) 
     )
-  
-               
 }
+
+
   
 
 
