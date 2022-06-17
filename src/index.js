@@ -8,7 +8,7 @@ import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import rootReducer from './redux/configureStore';
 import BookStore from './BookStore';
-import './index.css'
+import './index.css';
 
 const BASE_URL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/stJtLUEsDBgD97TvJSFm/books';
 

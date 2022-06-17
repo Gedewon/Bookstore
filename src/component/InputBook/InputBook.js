@@ -18,19 +18,19 @@ function InputBook() {
   };
 
   return (
-      <>
-      <div className={style.line}></div>
-    <footer>
-      <span className={style.Title}>ADD NEW BOOK</span>
-      <form onSubmit={handleSubmit}>
-        <input className={`${style.LessonPanel} ${style.Title}`} type="text" name="title" placeholder="Book title" />
-        <input className={style.LessonPanel2} type="text" name="author" placeholder="Author" />
-        <button className={`${style.RectangleButton} ${style.ADDBOOK}`} type="submit">
+    <>
+      <div className={style.line} />
+      <footer>
+        <span className={style.Title}>ADD NEW BOOK</span>
+        <form onSubmit={handleSubmit}>
+          <input className={`${style.LessonPanel} ${style.Title}`} type="text" name="title" placeholder="Book title" />
+          <input className={style.LessonPanel2} type="text" name="author" placeholder="Author" />
+          <button className={`${style.RectangleButton} ${style.ADDBOOK}`} type="submit">
             ADD BOOK
           </button>
-      </form>
-    </footer>
-      </>
+        </form>
+      </footer>
+    </>
   );
 }
 
