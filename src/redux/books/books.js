@@ -9,14 +9,13 @@ export default (state = {}, action) => {
     case ADD:
       return {
         ...state,
-        [action.payload.item_id]:{
+        [action.payload.item_id]:[{
           title   : action.payload.title,
           author  : action.payload.author,
           category: action.payload.category
-        }
+        }]
       }
     case REMOVE:
-      // return state.filter((book) => book.id !== action.id);
       return Object.keys(state)
             .filter((key) => key !== action.id)
             .reduce((obj, key) => {
@@ -35,7 +34,10 @@ export default (state = {}, action) => {
   }
 };
 
-export const addBook = (payload) => ({ type: ADD, payload });
+export const addBook = (payload) => {
+    console.log(payload);
+  return {type: ADD, payload}
+ };
 
 export const removeBook = (id) => ({ type: REMOVE, id });
 

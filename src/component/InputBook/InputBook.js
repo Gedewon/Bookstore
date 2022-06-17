@@ -9,9 +9,10 @@ function InputBook() {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(addBook({
-      id: uuidv4(),
+      item_id: uuidv4(),
       title: e.target.title.value,
       author: e.target.author.value,
+      category: 'Fiction',
     }));
   };
 
