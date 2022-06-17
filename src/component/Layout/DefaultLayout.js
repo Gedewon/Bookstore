@@ -13,12 +13,12 @@ function DefaultLayout({ children }) {
           </span>
           <nav>
             <ul>
-              <li className={`${style.BOOKS} ${style.TextStyle3}`}>
-                <Link to="/books">BOOKS</Link>
-              </li>
-              <li className={`${style.CATEGORIES} ${style.TextStyle3}`}>
-                <Link to="/categories">CATEGORIES </Link>
-              </li>
+              <Link to="/books"><li className={`${style.BOOKS} ${style.TextStyle3}`}>
+                BOOKS
+              </li></Link>
+             <Link to="/categories"> <li className={`${style.CATEGORIES} ${style.TextStyle3}`}>
+                CATEGORIES 
+              </li></Link>
             </ul>
           </nav>
         </header>

@@ -53,7 +53,7 @@
 }
 
 .TextStyle3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat',sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -61,6 +61,7 @@
   line-height: normal;
   letter-spacing: 1.9px;
   color: #121212;
+
 }
 
 ul {
@@ -104,3 +105,4 @@ header {
   display: flex;
   align-items: center;
 }
+
