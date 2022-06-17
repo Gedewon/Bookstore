@@ -1,0 +1,241 @@
+.BooksPanel {
+    width: 75rem;
+    height: 10.625rem;
+    margin: 2.313rem 6.25rem 0;
+    padding: 2rem 9.188rem 1.625rem 1.688rem;
+    border-radius: 4px;
+    border: solid 1px #e8e8e8;
+    background-color: #fff;
+    display: flex;
+}
+.Title{
+    width: 12.313rem;
+    height: 1.813rem;
+    margin: 0.188rem 20.188rem 0 0;
+    font-family: RobotoSlab;
+    font-size: 1.375rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    color: #121212;
+}
+.Genera{
+    width: 3.063rem;
+    height: 1.125rem;
+    margin: 0 2.438rem 0 0;
+    opacity: 0.5;
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #121212;
+}
+
+.Genera {
+    width: 3.063rem;
+    height: 1.125rem;
+    margin: 0 2.438rem 0 0;
+    opacity: 0.5;
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #121212;
+  }
+.TextStyle5 {
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #121212;
+}
+
+.Author{
+    width: 6.688rem;
+    height: 1.188rem;
+    margin: 0.25rem 0 0;
+    font-family: RobotoSlab;
+    font-size: 0.875rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4386bf;
+  
+}
+
+.TextStyle6{
+    font-family: RobotoSlab;
+    font-size: 0.875rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4386bf;
+}
+
+.LinkSection{
+    display: flex;
+    
+}
+
+.BookDetailSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+
+
+
+.Comments{
+    width: 4.563rem;
+    height: 1.188rem;
+    margin: 0.188rem 0.938rem 0.125rem 0;
+    font-family: RobotoSlab;
+    font-size: 0.875rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4386bf;
+    cursor: pointer;
+    display: block;
+    padding: 10px 0;
+    
+}
+
+.Line2{
+    width: -0.875rem;
+    height: 20px;
+    margin: 0.75rem 1.063rem 0 0.938rem;
+    border: solid 1px #e8e8e8;
+  }
+  
+.progress{
+    width: 5.625rem;
+    height: 5.62rem;
+  padding: 0.62rem 0.625rem 0.75rem 0.75rem;
+
+}
+.percentageCompleted{
+
+    width: 4.25rem;
+    height: 2.438rem;
+    margin: 0.063rem 5.75rem 0 0.688rem;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #121212;
+    padding: 0.62rem 0.625rem 0.75rem 0.75rem;
+    width: 5.625rem;
+    height: 5.62rem;
+     text-align: center;
+
+}
+
+.completed{
+    width: 5rem;
+  height: 1.125rem;
+  margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.textStyle2{
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #121212;
+}
+
+.LineBig {
+    width: -0.88rem;
+    height: 4.375rem;
+    margin: 1.125rem 3.688rem 0 4.938rem;
+    border: solid 1px #e8e8e8;
+  }
+
+.updateProgress{
+    /* width: 11.5rem; */
+    /* height: 2.063rem; */
+    margin: 0.75rem 0 0.563rem 3.688rem;
+    padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+    border-radius: 3px;
+    background-color: #0290ff;
+}
+.updateText{
+    font-family: RobotoSlab;
+    font-size: 0.813rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #fff;
+}
+
+.currentChapter{
+    width: 7.875rem;
+    height: 1.125rem;
+    margin: 0.063rem 3.625rem 0 3.688rem;
+    opacity: 0.5;
+    font-family: RobotoSlab;
+    font-size: 0.813rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #121212;
+  }
+
+  .Chapters{
+    width: 4.688rem;
+    height: 1.313rem;
+    margin: 0.438rem 6.813rem 0.25rem 3.688rem;
+    font-family: RobotoSlab;
+    font-size: 1rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    color: #121212;
+  }
+  .section3{
+    display: flex;
+    flex-direction: column;
+  }
+  
