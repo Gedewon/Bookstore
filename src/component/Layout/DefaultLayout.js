@@ -19,7 +19,7 @@ function DefaultLayout({ children }) {
               </ul>
             </nav> 
           </header>
-          <section>
+          <section className={style.BodySection}>
             {children}
           </section>
       </main>

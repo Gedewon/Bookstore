@@ -6,6 +6,8 @@
       background-color: var(--white-three);
     
 }
+
+
 .BookstoreCMS {
 
 width: 15rem;
@@ -23,8 +25,7 @@ color: #0290ff;
 
 }
 .BookstoreCMSBG {
-  width: 100rem;
-  height: 89.625rem;
+  /* height: 89.625rem; */
   padding: 9.313rem 3.75rem 7.688rem 6.25rem;
   background-color: var(--pale-grey);
 }
@@ -100,7 +101,6 @@ a{
 }
 
 .headerComponent{
-  width: 87.5rem;
   height: 5.938rem;
   margin: 0 0 2.375rem;
   padding: 1.438rem 6.188rem 1.688rem 6.25rem;

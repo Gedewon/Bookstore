@@ -1,4 +1,17 @@
 *{
-
+    padding: 0;
+    margin: 0;
     font-family: Montserrat,RobotoSlab;
 }
+
+:root {
+    --bubble-gum-pink: #ff5ab7;
+    --black: #1e1e1e;
+    --black: #000;
+    --pinkish-grey: #c7c7c7;
+    --pale-grey: #f5f6fa;
+    --warm-grey: #888;
+    --very-light-pink: #c4c4c4;
+    --medium-blue: #307bbe;
+    --white-three: #fafafa;
+  }
