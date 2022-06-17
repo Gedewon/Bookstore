@@ -1,21 +1,24 @@
 # Project Name : BookStore
 
-> The Bookstore is a website similar to the "Awesome Books" website built in the previous module. I will create an MVP version of it that allows you to::
+> BookStore CMS System
+
 
 - Display a list of books.
 - Add a book.
 - Remove a selected book.
 
-You can find live project at https://gedewon.github.io/Bookstore/
+
 
 ## Built With
 
 - React JS with Redux
+- Redux thunk
 - JSX
 - JavaScripts
 - GitFlow
 
-## Live Demo (Link for My BookStore Project)
+## PROJECT DISPLAY
+![screencapture-localhost-3000-books-2022-06-17-22_01_53](https://user-images.githubusercontent.com/56429354/174387971-2bd75266-ac12-4764-b595-57083289394d.png)
 
 ### Github
 
