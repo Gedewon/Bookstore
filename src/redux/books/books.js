@@ -36,20 +36,29 @@ export default (state = {}, action) => {
 };
 
 export const addBook = (payload) =>(dispatch,_,BASE_URL)=>{
-
   return axios({
     method:'POST',
     url:BASE_URL,
     data:{
       ...payload
     }
-  }).then(()=>{
-    dispatch({type: ADD, payload});
+  }).then((response)=>{
+   if(response.status === 201)
+     dispatch({type: ADD, payload});
   })
   
 } 
 
-export const removeBook = (id) => ({ type: REMOVE, id });
+export const removeBook = (id) =>(dispatch,_,BASE_URL)=>{
+ return axios({
+  method:'DELETE',
+  url:`${BASE_URL}/${id}`,
+ }).then((response)=>{
+  if(response.status === 201)
+    dispatch({ type: REMOVE, id });
+ })
+
+} 
 
 export const fetchUser = (payload) =>({type:FETCH_BOOK , payload});
 
