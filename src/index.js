@@ -8,10 +8,12 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import logger from 'redux-logger';
 import rootReducer from './redux/configureStore';
 import BookStore from './BookStore';
-import thunk from 'redux-thunk'
+import thunk from 'redux-thunk';
+
+const BASE_URL =  'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/stJtLUEsDBgD97TvJSFm/books';
 
 const store = createStore(rootReducer, composeWithDevTools(
-  applyMiddleware(thunk,logger),
+  applyMiddleware(thunk.withExtraArgument(BASE_URL),logger),
 ));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
